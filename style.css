@@ -1,0 +1,322 @@
+*{
+	margin: 0; 
+	padding: 0; 
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+  box-sizing: border-box; /* slider */
+
+}
+body{ 
+   background-size: 80%;
+   background: linear-gradient(141deg, white 0%, grey 51%, darkgrey 75%);
+   
+}
+
+.menu .search-container button {
+  float: right;
+  padding: 10px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+
+}
+.menu .search-container {
+  float: right;
+  padding-left: 50px;
+
+}
+
+.menu input[type=text] {
+  padding: 6px;
+  margin-top: 11px;
+  font-size: 17px;
+  border:none;
+}
+.logo img{
+  margin-left: 5%
+}
+
+.Header{ 
+
+	padding: 5px;
+  margin-bottom: 0%;
+  text-align: center;
+
+
+}
+.Header li{
+  list-style: none;
+
+
+}
+.menu {
+  background-color: #f2f5f3;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+}
+.menu ul{
+  display: inline-flex;
+  list-style: none;
+
+}
+.menu a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  border-right:solid 2px white;
+  border-left: :solid 2px white;
+}
+.menu a:hover {
+  background-color: darkgrey;
+  color: black;
+}
+
+
+.menu ul li ul {
+  visibility: hidden;
+  background-color: #f2f5f3;
+  position: fixed;
+  margin-top: 0rem;
+  left: 0;
+  z-index: 1; 
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.menu li.aumenu:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: inline-block;
+  left: 142px;
+}
+.menu li.trans:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: inline-block;
+  left: 320;
+}
+.menu li.cs:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: inline-block;
+  left: 665px;
+}
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: cover;
+  height: 300px;
+  position: relative;
+  margin: auto;
+}
+.icons{
+  vertical-align: middle;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  padding-bottom: 5px;
+}
+.icons ul{ 
+  list-style: none;
+  position: relative;
+  left: 5%; 
+  display: inline-flex;
+
+
+}
+.icons a:link{
+  text-decoration: none;
+  padding: 5px 30px;
+  
+
+}
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%
+  background-color:black;
+}
+.footer{
+  position: relative;
+  padding-top: 20px;
+   left: 0;
+   bottom: 0;
+   height: 200px;
+   width: 100%;
+   background-color: #1d3a66;
+   color: white;
+   text-align: center;
+}
+.rpseal{
+  width: 100px;
+  margin-left: -750px;
+  margin-bottom: -120px;
+}
+.rptext{
+  text-align: left;
+  margin-left: 400px;
+  margin-top: 10px;
+  font-size: 12;
+
+}
+.aboutgov{
+  text-align: left;
+  margin-left: 650px;
+  font-size: 12;
+  margin-top: -57px;
+}
+.gl{
+  text-align: left;
+  margin-left: 950px;
+  font-size: 12;
+  margin-top: -167px;
+  color: white;
+  line-height: 1.5;
+
+}
+.footer a:link{
+color: white;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: initial;
+
+}
+
+section#AboutUs {
+   
+    
+}
+section#Transparency {
+    
+
+}
+section#News {
+    
+    
+}
+section#CustomerService {
+	
+   
+}
+section#ContactUs{
+  
+    
+}
+.box{
+  width: 962px;
+  height:100%;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-left: 5px;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+ 
+}
+
+.ql{
+  font-size: 18;
+  position: absolute;
+  right: 9%;
+  margin-top: 70px;
+}
+
+
+.transc{
+  position: absolute;
+  right: 6%;
+  margin-top: 120px;
+}
+.sidelogos{
+  position: absolute;
+  display: inline-flex;
+  right: 6%;
+  margin-top: 320px;
+}
+.sidelogos li{
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.a{
+ margin-top: -200px;
+}
+
+.butt{
+    padding: 10px 10px;
+    margin-top: 8px;
+
+}
+
+#da,#dt,#time{
+  text-align:center;
+  font-size: 16px;
+  font-style: bold;
+  margin-top: 3px;
+  }
+ .td{
+  margin-top: -85px;
+  margin-left: 80%;
+  color: blue;
+  text-align: center;
+ } 
+
+
+
+
+
+	
+
+
+

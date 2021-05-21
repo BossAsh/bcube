@@ -84,7 +84,7 @@ body{
 .menu ul li ul {
   visibility: hidden;
   background-color: #f2f5f3;
-  position: fixed;
+  position: absolute;
   margin-top: 0rem;
   left: 0;
   z-index: 1; 
@@ -96,22 +96,54 @@ ul li ul:hover {
   visibility: visible;
   opacity: 1;
   display: inline-block;
-  left: 142px;
+  
 }
+.aumenu{
+  position: relative;
+  display: inline-block;
+}
+.dd1{
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0px 8px 30px 0px rgba(0,0,0,0.2);
+  min-width: 190px;
+
+}
+
 .menu li.trans:hover > ul,
 ul li ul:hover {
   visibility: visible;
   opacity: 1;
   display: inline-block;
-  left: 320;
 }
+.trans{
+  position: relative;
+  display: inline-block;
+}
+.dd2{
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0px 8px 30px 0px rgba(0,0,0,0.2);
+  min-width: 190px;
+} 
+
 .menu li.cs:hover > ul,
 ul li ul:hover {
   visibility: visible;
   opacity: 1;
-  display: inline-block;
-  left: 665px;
+  display: inline-block; 
 }
+.cs{
+  position: relative;
+  display: inline-block;
+}
+.dd3{
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0px 8px 30px 0px rgba(0,0,0,0.2);
+  min-width: 190px;
+}
+
 
 
 .mySlides {display: none;}
@@ -119,7 +151,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: cover;
+  max-width: 1240px;
   height: 300px;
   position: relative;
   margin: auto;
@@ -128,19 +160,19 @@ img {vertical-align: middle;}
   vertical-align: middle;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   padding-bottom: 5px;
+  text-align: center;
+
 }
 .icons ul{ 
   list-style: none;
   position: relative;
-  left: 5%; 
   display: inline-flex;
-
 
 }
 .icons a:link{
   text-decoration: none;
   padding: 5px 30px;
-  
+
 
 }
 
@@ -171,9 +203,6 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-
-
-
 
 .sticky{
   position: fixed;
@@ -262,12 +291,13 @@ section#ContactUs{
   margin-left: 5px;
   color: white;
   font-family: 'Century Gothic',sans-serif;
+  position: static;
  
 }
 
 .ql{
   font-size: 18;
-  position: relative;
+  position: absolute;
   right: 9%;
   margin-top: 70px;
 }
@@ -277,6 +307,7 @@ section#ContactUs{
   position: absolute;
   right: 6%;
   margin-top: 120px;
+  padding: auto;
 }
 .sidelogos{
   position: absolute;
@@ -287,6 +318,13 @@ section#ContactUs{
 .sidelogos li{
   list-style: none;
   padding-bottom: 20px;
+}
+.tsbanner{
+  position: absolute;
+  display: inline-flex;
+  height:200;
+  width:200;
+  left:17%;
 }
 
 .a{
@@ -310,7 +348,10 @@ section#ContactUs{
   margin-left: 80%;
   color: blue;
   text-align: center;
- } 
+ }
+ .aucontent{
+  margin-top: 70px;
+ }
 
 
 

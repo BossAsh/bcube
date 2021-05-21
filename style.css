@@ -267,7 +267,7 @@ section#ContactUs{
 
 .ql{
   font-size: 18;
-  position: absolute;
+  position: relative;
   right: 9%;
   margin-top: 70px;
 }
